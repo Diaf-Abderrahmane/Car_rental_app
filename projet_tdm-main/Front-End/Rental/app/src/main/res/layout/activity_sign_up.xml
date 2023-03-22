@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/cargo"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/login_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to CarGo"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="90dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/parag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Being logged in allows you to use CarGo \n more comfortably"
+        android:layout_below="@id/login_to"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number"
+        android:layout_below="@+id/parag"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="35dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_below="@+id/number"
+        app:startIconDrawable="@drawable/phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_below="@+id/number_input"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@+id/password"
+        app:startIconDrawable="@drawable/lock"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:passwordToggleEnabled="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:id="@+id/login"
+        android:padding="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password_input"
+        android:background="@drawable/hh"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/home"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you don't have an account"
+        android:layout_toEndOf="@+id/login"
+        android:layout_below="@+id/password_input"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/sign_up"
+        android:text="@string/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/login"
+        android:layout_below="@+id/account"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/Prime"
+        />
+
+</RelativeLayout>

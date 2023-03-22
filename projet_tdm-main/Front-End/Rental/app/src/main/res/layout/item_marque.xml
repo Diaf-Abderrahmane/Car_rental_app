@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="90dp"
+    android:layout_margin="10dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/marqueImage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/merc"
+        />
+    <TextView
+        android:id="@+id/marque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mercedes"
+        android:textColor="@color/grayy"
+        android:layout_below="@+id/marqueImage"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="10sp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    
+
+</RelativeLayout>

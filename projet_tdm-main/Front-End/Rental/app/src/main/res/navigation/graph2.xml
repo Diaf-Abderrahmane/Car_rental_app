@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph2"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.rental.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notifFragment"
+        android:name="com.example.rental.NotifFragment"
+        android:label="NotifFragment"
+        tools:layout="@layout/fragment_notif"/>
+    <fragment
+        android:id="@+id/tripsFragment"
+        android:name="com.example.rental.TripsFragment"
+        android:label="TripsFragment"
+        tools:layout="@layout/fragment_trips" />
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.example.rental.MoreFragment"
+        android:label="MoreFragment"
+        tools:layout="@layout/fragment_more" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.rental.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+</navigation>
